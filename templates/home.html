@@ -1,0 +1,34 @@
+{% extends "template_root.html" %}
+{% block body %}
+<table width="98%" align="center">
+    <tr>
+        <td height="150">&nbsp;</td>
+        <td height="150" width="30%"><h1 align="center">Task Management System</h1></td>
+        <td height="150">&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>
+            <form action="/login" method="post" class="form" role="form">
+               <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Email</span>
+                    <input type="text" name="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+                </div>
+                    </p>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon2">SSN&nbsp;&nbsp;</span>
+                    <input type="password" name="ssn" class="form-control" placeholder="SSN" aria-describedby="basic-addon2">
+                </div>
+                    </p>
+                <div align="center"><button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;Log In</button></div>
+            </form>
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+{% endblock %}
